@@ -4,10 +4,6 @@
 [![GitHub latest SemVer tag)](https://img.shields.io/github/v/tag/lord-of-dock/docker-net-tools)](https://github.com/lord-of-dock/docker-net-tools/tags)
 [![GitHub release)](https://img.shields.io/github/v/release/lord-of-dock/docker-net-tools)](https://github.com/lord-of-dock/docker-net-tools/releases)
 
-[![docker version semver](https://img.shields.io/docker/v/sinlov/docker-net-tools?sort=semver)](https://hub.docker.com/r/sinlov/docker-net-tools)
-[![docker image size](https://img.shields.io/docker/image-size/sinlov/docker-net-tools)](https://hub.docker.com/r/sinlov/docker-net-tools)
-[![docker pulls](https://img.shields.io/docker/pulls/sinlov/docker-net-tools)](https://hub.docker.com/r/sinlov/docker-net-tools/tags?page=1&ordering=last_updated)
-
 # docker-net-tools
 
 - docker hub see [https://hub.docker.com/r/sinlov/docker-net-tools](https://hub.docker.com/r/sinlov/docker-net-tools)
@@ -17,6 +13,10 @@
 |---|---|
 | latest | `alpine:3.20.3` |
 | 1.0.x | `alpine:3.20.3` |
+
+[![docker version semver](https://img.shields.io/docker/v/sinlov/docker-net-tools?sort=semver)](https://hub.docker.com/r/sinlov/docker-net-tools)
+[![docker image size](https://img.shields.io/docker/image-size/sinlov/docker-net-tools)](https://hub.docker.com/r/sinlov/docker-net-tools)
+[![docker pulls](https://img.shields.io/docker/pulls/sinlov/docker-net-tools)](https://hub.docker.com/r/sinlov/docker-net-tools/tags?page=1&ordering=last_updated)
 
 ## for
 
@@ -78,6 +78,17 @@ docker run --rm \
   curl --version && \
   nmap --version && \
   bash --version '
+```
+
+- use as compose
+
+```yaml
+services:
+  utils-net-tools:
+    container_name: 'utils-net-tools'
+    # https://hub.docker.com/r/sinlov/docker-net-tools/tags
+    image: 'sinlov/docker-net-tools:1.0.0-alpine'
+    command: curl -s https://httpbin.org/status/200
 ```
 
 ## source repo
