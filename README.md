@@ -11,6 +11,12 @@
 # docker-net-tools
 
 - docker hub see [https://hub.docker.com/r/sinlov/docker-net-tools](https://hub.docker.com/r/sinlov/docker-net-tools)
+- basic image
+
+| tag | image |
+|---|---|
+| latest | `alpine:3.20.3` |
+| 1.0.x | `alpine:3.20.3` |
 
 ## for
 
