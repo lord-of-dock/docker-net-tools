@@ -16,6 +16,29 @@
 
 - simple image with network troubleshooting utils
 
+```bash
+## tmux
+# create new session
+tmux new -t net-tools
+# attach to session
+tmux at -t net-tools
+
+## nc
+nc -zv [ip] [port]
+nc -zuv [ip] [port]
+## ping
+ping -c 3 [ip]
+## curl
+curl -v https://httpbin.org/status/200
+## iperf3
+# server
+iperf3 -s
+iperf3 -s --port 59980
+# client
+iperf3 -p 5201 -c [server ip]
+iperf3 -p 5201 -c [server ip] -R
+```
+
 ### alpine
 
 install kits:
@@ -45,6 +68,9 @@ docker run --rm \
   bash -c ' \
   uname -asrm && \
   cat /etc/os-release && \
+  jq --version && \
+  curl --version && \
+  nmap --version && \
   bash --version '
 ```
 

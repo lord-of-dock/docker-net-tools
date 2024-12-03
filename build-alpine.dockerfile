@@ -10,5 +10,5 @@ FROM alpine:3.20.3
 #USER root
 
 # add alpine component
-RUN apk --no-cache add ca-certificates bash bind-tools curl jq nmap net-tools iperf3 tmux && \
+RUN apk --no-cache add ca-certificates bash bind-tools curl jq nmap net-tools iperf3 busybox-extras tmux && \
   rm -rf /var/cache/apk/* /tmp/*
