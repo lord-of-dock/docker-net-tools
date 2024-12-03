@@ -52,6 +52,8 @@ target "image-alpine-all" {
   inherits = ["image-alpine"]
   platforms = [
     "linux/amd64",
-    "linux/arm64/v8"
+    "linux/386",
+    "linux/arm64/v8",
+    "linux/arm/v7"
   ]
 }
