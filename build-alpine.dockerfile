@@ -1,7 +1,7 @@
 # This dockerfile uses extends image https://hub.docker.com/_/alpine
 # VERSION 1
 # Author: sinlov
-# dockerfile offical document https://docs.docker.com/engine/reference/builder/
+# dockerfile official document https://docs.docker.com/engine/reference/builder/
 # maintainer="https://github.com/bridgewwater/template-docker-runtime-alpine"
 
 # https://hub.docker.com/_/alpine/tags
